@@ -13,19 +13,19 @@ const SkillText = () => {
                 className='Welcome-box px-[8px] py-[4px] border border-[#7042f88b] opacity-[0.9]'
             >
                 <SparklesIcon className='text-[#b49fff] mr-[10px] h-5 w-5' />
-                <h1 className='Welcome-text text-[13px] '>Think better with ME</h1>
+                <h1 className='Welcome-text text-[13px] '>Tech Stack & Security Arsenal</h1>
             </motion.div>
             <motion.div
                 variants={slideInFromLeft(0.5)}
                 className='text-[22px] md:text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]'
             >
-                Making apps with modern technology
+                Building robust systems. Defending the core.
             </motion.div>
             <motion.div
                 variants={slideInFromLeft(0.5)}
-                className='cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center'
+                className=' text-[20px] text-gray-200 mb-10 mt-[10px] text-center'
             >
-                Never missed a task deadline or idea
+                Leveraging modern frameworks, low-level systems, and advanced security protocols.
 
             </motion.div>
         </div>

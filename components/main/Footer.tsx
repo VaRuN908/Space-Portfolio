@@ -7,64 +7,61 @@ import {
     RxLinkedinLogo,
 } from "react-icons/rx";
 
-import { FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
+        <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] relative z-[30]">
             <div className="w-full flex flex-col items-center justify-center m-auto">
                 <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
 
 
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">Community</div>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                        <a href="https://youtube.com/@varunbharadwaj3265?si=VOaXXF0m-0QdoPwU" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
                             <FaYoutube />
                             <span className="text-[15px] ml-[6px]">Youtube</span>
-                        </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                        </a>
+                        <a href="https://github.com/VaRuN908" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
                             <RxGithubLogo />
                             <span className="text-[15px] ml-[6px]">Github</span>
-                        </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
+                        </a>
+                        <a href="https://discord.gg/S5EYhZgc" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
                             <RxDiscordLogo />
                             <span className="text-[15px] ml-[6px]">Discord</span>
-                        </p>
+                        </a>
                     </div>
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">Social Media</div>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <FaYoutube />
+                        <a href="https://www.instagram.com/the_varun_019?igsh=b3JscjB3bjF6aWUy" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
+                            <RxInstagramLogo />
                             <span className="text-[15px] ml-[6px]">Instagram</span>
-                        </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <RxGithubLogo />
+                        </a>
+                        <a href="https://x.com/the_varun_019" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
+                            <RxTwitterLogo />
                             <span className="text-[15px] ml-[6px]">Twitter</span>
-                        </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                            <RxDiscordLogo />
+                        </a>
+                        <a href="https://www.linkedin.com/in/varun-bharadwaj-646805291" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
+                            <RxLinkedinLogo />
                             <span className="text-[15px] ml-[6px]">Linkedin</span>
-                        </p>
+                        </a>
                     </div>
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">About</div>
                         <p className="flex flex-row items-center my-[15px] cursor-pointer">
-
-                            <span className="text-[15px] ml-[6px]">Become Sponsor</span>
+                            <span className="text-[15px] ml-[6px]"> Experience </span>
                         </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-
+                        <a href="#about-me" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
                             <span className="text-[15px] ml-[6px]">Learning about me</span>
-                        </p>
-                        <p className="flex flex-row items-center my-[15px] cursor-pointer">
-
-                            <span className="text-[15px] ml-[6px]">mifwebchain@gmail.com</span>
-                        </p>
+                        </a>
+                        <a href="mailto:thevaru019@gmail.com" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
+                            <span className="text-[15px] ml-[6px]">thevaru019@gmail.com</span>
+                        </a>
                     </div>
                 </div>
 
                 <div className="mb-[20px] text-[15px] text-center">
-                    &copy; WebChain Dev 2023 Inc. All rights reserved
+                    &copy; Varun Bharadwaj 2025. All rights reserved
                 </div>
             </div>
         </div>

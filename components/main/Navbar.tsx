@@ -11,14 +11,14 @@ const Navbar = () => {
             <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
                 <a href="#about-me" className='h-auto w-auto flex flex-row items-center'>
                     <Image
-                        src='/NavLogo.png'
+                        src='/NavLogo-removebg-preview.png'
                         alt='logo'
-                        width={70}
-                        height={70}
-                        className='cursor-pointer hover:animate-slowspin'
+                        width={200}
+                        height={200}
+                        className='cursor-pointer hover:animate-slowspin h-[100px] w-auto object-contain'
                     />
-                    <span className='font-bold ml-[10px] hidden md:block text-gray-300'>
-                        WebChain Dev
+                    <span className='font-bold ml-[10px] hidden md:block text-lg tracking-wide'>
+                        <span className='text-[#5ce1e6]'>Cyber</span><span className='text-gray-400'>synapse</span>
                     </span>
                 </a>
 
@@ -34,13 +34,20 @@ const Navbar = () => {
                 {/* Desktop social icons */}
                 <div className='hidden md:flex flex-row gap-5'>
                     {Socials.map((social) => (
-                        <Image
-                            src={social.src}
-                            alt={social.name}
+                        <a
+                            href={social.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             key={social.name}
-                            width={24}
-                            height={24}
-                        />
+                            title={social.name}
+                        >
+                            <Image
+                                src={social.src}
+                                alt={social.name}
+                                width={24}
+                                height={24}
+                            />
+                        </a>
                     ))}
                 </div>
 
@@ -64,13 +71,20 @@ const Navbar = () => {
                     <a href="#projects" className='text-lg cursor-pointer hover:text-purple-400 transition-colors' onClick={() => setIsOpen(false)}>Projects</a>
                     <div className='flex flex-row gap-5 mt-4'>
                         {Socials.map((social) => (
-                            <Image
-                                src={social.src}
-                                alt={social.name}
+                            <a
+                                href={social.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 key={social.name}
-                                width={24}
-                                height={24}
-                            />
+                                title={social.name}
+                            >
+                                <Image
+                                    src={social.src}
+                                    alt={social.name}
+                                    width={24}
+                                    height={24}
+                                />
+                            </a>
                         ))}
                     </div>
                 </div>

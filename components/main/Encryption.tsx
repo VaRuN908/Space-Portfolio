@@ -13,16 +13,16 @@ const encryption = () => {
             >
                 <motion.div
                     variants={slideInFromTop}
-                    className='text-[40px] font-medium text-center text-gray-200'
+                    className='text-3xl md:text-[40px] font-medium text-center text-gray-200 py-5'
                 >
-                    Preformance <span className='text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>
+                    Performance <span className='text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>
                         {" "}
                         &{" "}
                     </span>
                     Security
                 </motion.div>
             </div>
-            <div className='flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto'>
+            <div className='flex flex-col items-center justify-center translate-y-[-20px] md:translate-y-[-50px] absolute z-[20] w-auto h-auto px-4'>
                 <div
                     className='flex flex-col items-center group cursor-pointer w-auto h-auto'
                 >
@@ -48,16 +48,16 @@ const encryption = () => {
                     <h1 className='Welcome-text text-[12px]'>Encryption</h1>
                 </div>
             </div>
-            <div className='absolute z-[20] bottom-[10px] px-[5px]'>
+            <div className='absolute z-[20] bottom-[10px] px-[5px] w-full flex justify-center'>
                 <div
-                    className='cursive text-[20px] font-medium text-center text-gray-300'
+                    className='cursive text-base md:text-[20px] font-medium text-center text-gray-300 max-w-[90vw]'
                 >
-                    Secure your data with end-to-end encryption
+                    Secure your data with end - to - end encryption
 
                 </div>
             </div>
             <div
-                className='w-full flex items-start justify-center absolute'
+                className='w-full flex items-start justify-center absolute pointer-events-none'
             >
                 <video
                     loop

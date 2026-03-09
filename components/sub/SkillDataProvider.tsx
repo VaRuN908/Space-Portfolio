@@ -8,8 +8,10 @@ interface Props {
     width: number;
     height: number;
     index: number;
+    certificate?: string;
+    onCertificateClick?: (url: string) => void;
 }
-const SkillDataProvider = ({ src, width, height, index }: Props) => {
+const SkillDataProvider = ({ src, width, height, index, certificate, onCertificateClick }: Props) => {
     const [ref, inView] = useInView({
         triggerOnce: true,
     });
@@ -28,12 +30,15 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
             animate={inView ? "visible" : "hidden"}
             custom={index}
             transition={{ delay: index * animationDelay }}
+            onClick={() => certificate && onCertificateClick?.(certificate)}
+            className={`flex items-center justify-center ${certificate ? 'cursor-pointer hover:scale-110 transition-transform active:scale-95' : ''}`}
         >
             <Image
                 src={src}
                 alt="skill Image"
                 width={width}
                 height={height}
+                className="object-contain"
             />
         </motion.div>
     )
