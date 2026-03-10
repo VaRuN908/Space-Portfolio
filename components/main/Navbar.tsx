@@ -13,26 +13,26 @@ const Navbar = () => {
                     <Image
                         src='/NavLogo-removebg-preview.png'
                         alt='logo'
-                        width={200}
-                        height={200}
-                        className='cursor-pointer hover:animate-slowspin h-[100px] w-auto object-contain'
+                        width={70}
+                        height={70}
+                        className='cursor-pointer hover:animate-slowspin h-[50px] w-auto object-contain'
                     />
-                    <span className='font-bold ml-[10px] hidden md:block text-lg tracking-wide'>
-                        <span className='text-[#5ce1e6]'>Cyber</span><span className='text-gray-400'>synapse</span>
+                    <span className='font-bold ml-[10px] block text-gray-300'>
+                        <span className='text-transparent pl-12 bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>Cyber</span><span>synapse</span>
                     </span>
                 </a>
 
                 {/* Desktop nav links */}
-                <div className='hidden md:flex w-[500px] h-full flex-row items-center justify-between md:mr-20'>
-                    <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200'>
-                        <a href="#about-me" className='cursor-pointer'>About me</a>
-                        <a href="#skills" className='cursor-pointer'>Skills</a>
-                        <a href="#projects" className='cursor-pointer'>Projects</a>
+                <div className='hidden md:flex w-full max-w-[300px] lg:max-w-[500px] h-full flex-row items-center justify-between md:mr-4 lg:mr-20'>
+                    <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[15px] lg:px-[20px] py-[8px] lg:py-[10px] rounded-full text-gray-200 text-[14px] lg:text-[16px]'>
+                        <a href="#about-me" className='cursor-pointer hover:text-purple-400 transition-colors'>About</a>
+                        <a href="#skills" className='cursor-pointer hover:text-purple-400 transition-colors'>Skills</a>
+                        <a href="#projects" className='cursor-pointer hover:text-purple-400 transition-colors'>Projects</a>
                     </div>
                 </div>
 
                 {/* Desktop social icons */}
-                <div className='hidden md:flex flex-row gap-5'>
+                <div className='hidden md:flex flex-row gap-3 lg:gap-5'>
                     {Socials.map((social) => (
                         <a
                             href={social.link}
@@ -40,12 +40,14 @@ const Navbar = () => {
                             rel="noopener noreferrer"
                             key={social.name}
                             title={social.name}
+                            className='hover:scale-110 transition-transform'
                         >
                             <Image
                                 src={social.src}
                                 alt={social.name}
                                 width={24}
                                 height={24}
+                                className='w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]'
                             />
                         </a>
                     ))}
@@ -53,7 +55,7 @@ const Navbar = () => {
 
                 {/* Mobile hamburger button */}
                 <button
-                    className='md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 cursor-pointer z-[60]'
+                    className='md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 cursor-pointer z-50'
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label='Toggle menu'
                 >

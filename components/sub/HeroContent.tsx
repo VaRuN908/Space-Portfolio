@@ -10,9 +10,9 @@ const HeroContent = () => {
         <motion.div
             initial="hidden"
             animate="visible"
-            className='flex flex-col md:flex-row items-center justify-center px-5 md:px-[100px] mt-20 md:mt-[150px] w-full z-20 gap-10'
+            className='flex flex-col lg:flex-row items-center justify-center px-5 md:px-[100px] mt-20 md:mt-[150px] w-full z-20 gap-10'
         >
-            <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-center md:text-start items-center md:items-start'>
+            <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-center md:text-start items-center md:items-start bg-[#030014]/40 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-6 md:p-0 rounded-3xl md:rounded-none'>
                 <motion.div
                     initial="hidden"
                     animate="visible"
@@ -26,7 +26,7 @@ const HeroContent = () => {
                     variants={slideInFromLeft(0.5)}
                     className='flex flex-col gap-6 mt-6 text-3xl md:text-5xl lg:text-6xl font-bold text-white max-w-[600px] w-auto h-auto'
                 >
-                    <span className='leading-tight'>
+                    <span className='leading-tight text-5xl'>
                         Architecting resilient <span className='text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>applications and </span>
                         securing the App.
                     </span>
