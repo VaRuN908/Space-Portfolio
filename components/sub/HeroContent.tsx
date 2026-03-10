@@ -12,12 +12,12 @@ const HeroContent = () => {
             animate="visible"
             className='flex flex-col lg:flex-row items-center justify-center px-5 md:px-[100px] mt-20 md:mt-[150px] w-full z-20 gap-10'
         >
-            <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-center md:text-start items-center md:items-start bg-[#030014]/40 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-6 md:p-0 rounded-3xl md:rounded-none'>
+            <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-center lg:text-start items-center lg:items-start bg-[#030014]/40 lg:bg-transparent backdrop-blur-md lg:backdrop-blur-none p-6 lg:p-0 rounded-3xl lg:rounded-none'>
                 <motion.div
                     initial="hidden"
                     animate="visible"
                     variants={slideInFromTop}
-                    className='Welcome-box px-[8px] py-[4px] border border-[#7042f88b] opacity-[0.9] flex items-center justify-center md:justify-start'
+                    className='Welcome-box px-[8px] py-[4px] border border-[#7042f88b] opacity-[0.9] flex items-center justify-center lg:justify-start'
                 >
                     <SparklesIcon className='text-[#b49fff] mr-[10px] h-5 w-5' />
                     <h1 className='Welcome-text text-[13px] '>Application Security Engineer</h1>

@@ -9,21 +9,21 @@ const Navbar = () => {
     return (
         <div className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10'>
             <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
-                <a href="#about-me" className='h-auto w-auto flex flex-row items-center'>
+                <a href="#about-me" className='h-[50px] w-auto flex flex-row items-center absolute left-1/2 -translate-x-1/2 lg:static lg:transform-none lg:left-auto'>
                     <Image
                         src='/NavLogo-removebg-preview.png'
                         alt='logo'
                         width={70}
                         height={70}
-                        className='cursor-pointer hover:animate-slowspin h-[50px] w-auto object-contain'
+                        className='cursor-pointer hover:animate-slowspin h-[50px] w-auto object-contain z-10'
                     />
                     <span className='font-bold ml-[10px] block text-gray-300'>
-                        <span className='text-transparent pl-12 bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>Cyber</span><span>synapse</span>
+                        <span className='text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>Cyber</span><span>synapse</span>
                     </span>
                 </a>
 
                 {/* Desktop nav links */}
-                <div className='hidden md:flex w-full max-w-[300px] lg:max-w-[500px] h-full flex-row items-center justify-between md:mr-4 lg:mr-20'>
+                <div className='hidden lg:flex w-full max-w-[300px] lg:max-w-[500px] h-full flex-row items-center justify-between lg:mr-20'>
                     <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[15px] lg:px-[20px] py-[8px] lg:py-[10px] rounded-full text-gray-200 text-[14px] lg:text-[16px]'>
                         <a href="#about-me" className='cursor-pointer hover:text-purple-400 transition-colors'>About</a>
                         <a href="#skills" className='cursor-pointer hover:text-purple-400 transition-colors'>Skills</a>
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop social icons */}
-                <div className='hidden md:flex flex-row gap-3 lg:gap-5'>
+                <div className='hidden lg:flex flex-row gap-3 lg:gap-5'>
                     {Socials.map((social) => (
                         <a
                             href={social.link}
@@ -55,7 +55,7 @@ const Navbar = () => {
 
                 {/* Mobile hamburger button */}
                 <button
-                    className='md:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 cursor-pointer z-50'
+                    className='lg:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 cursor-pointer z-50 ml-auto'
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label='Toggle menu'
                 >
@@ -66,7 +66,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile menu overlay */}
-            <div className={`md:hidden fixed top-[65px] left-0 w-full bg-[#030014]/95 backdrop-blur-md border-t border-[#7042f861] transition-all duration-300 ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+            <div className={`lg:hidden fixed top-[65px] left-0 w-full bg-[#030014]/95 backdrop-blur-md border-t border-[#7042f861] transition-all duration-300 ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
                 <div className='flex flex-col items-center gap-6 py-8 text-gray-200'>
                     <a href="#about-me" className='text-lg cursor-pointer hover:text-purple-400 transition-colors' onClick={() => setIsOpen(false)}>About me</a>
                     <a href="#skills" className='text-lg cursor-pointer hover:text-purple-400 transition-colors' onClick={() => setIsOpen(false)}>Skills</a>
