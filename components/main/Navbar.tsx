@@ -13,9 +13,9 @@ const Navbar = () => {
                     <Image
                         src='/NavLogo-removebg-preview.png'
                         alt='logo'
-                        width={70}
-                        height={70}
-                        className='cursor-pointer hover:animate-slowspin h-[50px] w-auto object-contain z-10'
+                        width={90}
+                        height={90}
+                        className='cursor-pointer hover:animate-slowspin h-[50px] w-auto object-contain z-10 ml-40'
                     />
                     <span className='font-bold ml-[10px] block text-gray-300'>
                         <span className='text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>Cyber</span><span>synapse</span>
