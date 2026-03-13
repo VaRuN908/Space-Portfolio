@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import StarCanvas from "@/components/main/StarBackground";
+import ClientStarCanvas from "@/components/main/ClientStarCanvas";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 
@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
-        <StarCanvas />
+        <ClientStarCanvas />
         <Navbar />
         {children}
         <Footer />

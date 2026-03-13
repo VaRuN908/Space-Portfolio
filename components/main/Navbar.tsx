@@ -8,54 +8,48 @@ const Navbar = () => {
 
     return (
         <div className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10'>
-            <div className='w-full h-full flex flex-row items-center justify-between m-auto px-[10px]'>
-                <a href="#about-me" className='h-[50px] w-auto flex flex-row items-center absolute left-1/2 -translate-x-1/2 lg:static lg:transform-none lg:left-auto'>
-                    <Image
-                        src='/NavLogo-removebg-preview.png'
-                        alt='logo'
-                        width={90}
-                        height={90}
-                        className='cursor-pointer hover:animate-slowspin h-[50px] w-auto object-contain z-10 ml-40'
-                    />
-                    <span className='font-bold ml-[10px] block text-gray-300'>
-                        <span className='text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>Cyber</span><span>synapse</span>
-                    </span>
+            {/* Main Container: justify-between handles the spacing between Logo(Left) and Hamburger(Right) */}
+            <div className='w-full h-full flex flex-row items-center justify-between px-2'>
+
+                {/* Logo Section: Removed absolute and left-1/2 to pin it to the left naturally */}
+                <a href="#about-me" className="flex flex-row items-center z-50 mr-auto">
+                    <div className="flex items-center">
+                        <Image
+                            src="/NavLogo-removebg-preview.png"
+                            alt="logo"
+                            width={90}
+                            height={90}
+                            priority
+                            className="cursor-pointer hover:animate-slowspin object-contain"
+                        />
+                        <span className="font-bold ml-2 text-gray-300 flex items-center">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Cyber</span>
+                            <span>synapse</span>
+                        </span>
+                    </div>
                 </a>
 
-                {/* Desktop nav links */}
-                <div className='hidden lg:flex w-full max-w-[300px] lg:max-w-[500px] h-full flex-row items-center justify-between lg:mr-20'>
-                    <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[15px] lg:px-[20px] py-[8px] lg:py-[10px] rounded-full text-gray-200 text-[14px] lg:text-[16px]'>
+                {/* Desktop nav links (Hidden on mobile) */}
+                <div className='hidden lg:flex w-full max-w-[500px] h-full flex-row items-center justify-between mx-auto'>
+                    <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200'>
                         <a href="#about-me" className='cursor-pointer hover:text-purple-400 transition-colors'>About</a>
                         <a href="#skills" className='cursor-pointer hover:text-purple-400 transition-colors'>Skills</a>
                         <a href="#projects" className='cursor-pointer hover:text-purple-400 transition-colors'>Projects</a>
                     </div>
                 </div>
 
-                {/* Desktop social icons */}
-                <div className='hidden lg:flex flex-row gap-3 lg:gap-5'>
+                {/* Desktop social icons (Hidden on mobile) */}
+                <div className='hidden lg:flex flex-row gap-5'>
                     {Socials.map((social) => (
-                        <a
-                            href={social.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            key={social.name}
-                            title={social.name}
-                            className='hover:scale-110 transition-transform'
-                        >
-                            <Image
-                                src={social.src}
-                                alt={social.name}
-                                width={24}
-                                height={24}
-                                className='w-[20px] h-[20px] lg:w-[24px] lg:h-[24px]'
-                            />
+                        <a href={social.link} target="_blank" rel="noopener noreferrer" key={social.name} className='hover:scale-110 transition-transform'>
+                            <Image src={social.src} alt={social.name} width={24} height={24} />
                         </a>
                     ))}
                 </div>
 
-                {/* Mobile hamburger button */}
+                {/* Mobile hamburger button: Pins to the right because of justify-between */}
                 <button
-                    className='lg:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 cursor-pointer z-50 ml-auto'
+                    className='lg:hidden flex flex-col justify-center items-center gap-[5px] w-8 h-8 cursor-pointer z-50'
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label='Toggle menu'
                 >
@@ -68,30 +62,13 @@ const Navbar = () => {
             {/* Mobile menu overlay */}
             <div className={`lg:hidden fixed top-[65px] left-0 w-full bg-[#030014]/95 backdrop-blur-md border-t border-[#7042f861] transition-all duration-300 ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
                 <div className='flex flex-col items-center gap-6 py-8 text-gray-200'>
-                    <a href="#about-me" className='text-lg cursor-pointer hover:text-purple-400 transition-colors' onClick={() => setIsOpen(false)}>About me</a>
-                    <a href="#skills" className='text-lg cursor-pointer hover:text-purple-400 transition-colors' onClick={() => setIsOpen(false)}>Skills</a>
-                    <a href="#projects" className='text-lg cursor-pointer hover:text-purple-400 transition-colors' onClick={() => setIsOpen(false)}>Projects</a>
-                    <div className='flex flex-row gap-5 mt-4'>
-                        {Socials.map((social) => (
-                            <a
-                                href={social.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                key={social.name}
-                                title={social.name}
-                            >
-                                <Image
-                                    src={social.src}
-                                    alt={social.name}
-                                    width={24}
-                                    height={24}
-                                />
-                            </a>
-                        ))}
-                    </div>
+                    <a href="#about-me" className='text-lg' onClick={() => setIsOpen(false)}>About me</a>
+                    <a href="#skills" className='text-lg' onClick={() => setIsOpen(false)}>Skills</a>
+                    <a href="#projects" className='text-lg' onClick={() => setIsOpen(false)}>Projects</a>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
+
 export default Navbar;

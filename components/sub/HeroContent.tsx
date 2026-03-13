@@ -12,7 +12,7 @@ const HeroContent = () => {
             animate="visible"
             className='flex flex-col lg:flex-row items-center justify-center px-5 md:px-[100px] mt-20 md:mt-[150px] w-full z-20 gap-10'
         >
-            <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-center lg:text-start items-center lg:items-start bg-[#030014]/40 lg:bg-transparent backdrop-blur-md lg:backdrop-blur-none p-6 lg:p-0 rounded-3xl lg:rounded-none'>
+            <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-center lg:text-start items-center lg:items-start bg-[#030014]/60 lg:bg-transparent p-6 lg:p-0 rounded-3xl lg:rounded-none'>
                 <motion.div
                     initial="hidden"
                     animate="visible"
@@ -22,23 +22,22 @@ const HeroContent = () => {
                     <SparklesIcon className='text-[#b49fff] mr-[10px] h-5 w-5' />
                     <h1 className='Welcome-text text-[13px] '>Application Security Engineer</h1>
                 </motion.div>
-                <motion.div
-                    variants={slideInFromLeft(0.5)}
-                    className='flex flex-col gap-6 mt-6 text-3xl md:text-5xl lg:text-6xl font-bold text-white max-w-[600px] w-auto h-auto'
+                <div
+                    className='flex flex-col gap-6 mt-6 text-3xl md:text-5xl lg:text-6xl font-bold text-white max-w-[600px] w-auto h-auto animate-slide-in-left'
                 >
                     <span className='leading-tight text-5xl'>
                         Architecting resilient <span className='text-transparent bg-clip-text bg-linear-to-r from-purple-500 to-cyan-500'>applications and </span>
                         securing the App.
                     </span>
-                </motion.div>
+                </div>
                 <motion.p
-                    variants={slideInFromLeft(0.8)}
+                    variants={slideInFromLeft(0.1)}
                     className='text-base md:text-lg text-gray-400 my-5 max-w-[600px]'
                 >
                     I engineer high-performance software with a security-first mindset. From robust backend infrastructure to hardened frontend interfaces, I build digital ecosystems that are designed to withstand modern threats.
                 </motion.p>
                 <motion.a
-                    variants={slideInFromLeft(1.0)}
+                    variants={slideInFromLeft(0.2)}
                     className='py-2 px-6 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
                 >
                     Access The Core!
@@ -53,6 +52,7 @@ const HeroContent = () => {
                     alt="work icons"
                     width={650}
                     height={650}
+                    priority
                     className='w-full max-w-[400px] md:max-w-full'
                 />
             </motion.div>

@@ -67,3 +67,44 @@
 html {
     scroll-behavior: smooth;
 }
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.3s ease-out forwards;
+}
+
+
+
+/* Target only mobile devices (screens smaller than 1024px) */
+@media (max-width: 1023px) {
+
+    /* Find the link containing the logo and name */
+    header a[href="#about-me"],
+    nav a[href="#about-me"],
+    .fixed a[href="#about-me"] {
+        position: static !important;
+        transform: none !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        display: flex !important;
+        left: auto !important;
+        width: fit-content !important;
+    }
+
+    /* Ensure the logo image itself doesn't have a huge margin */
+    header a[href="#about-me"] img,
+    nav a[href="#about-me"] img,
+    .fixed a[href="#about-me"] img {
+        margin-left: 0 !important;
+    }
+}
