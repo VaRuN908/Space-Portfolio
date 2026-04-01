@@ -7,24 +7,30 @@ const Projects = () => {
       <h1 className='text-[28px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10 md:py-20'>
         ----:My Projects:----
       </h1>
-      <div className='h-full w-full flex flex-col lg:flex-row gap-10 px-10'>
+      <div className='h-full w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 px-6 md:px-10'>
+        {/* link disabled: https://github.com/VaRuN908 */}
         <ProjectCard
           src="/cards-project1.png"
-          title="VibeLinkr: Founder Networking"
+          title="Founder Networking"
           description="A professional networking platform designed for founders and creators. Built with a focus on intent-based connections, featuring a custom authentication system and a high-performance landing page developed in React."
-          link="https://github.com/VaRuN908"
         />
+        {/* link disabled: https://space-portfolio-lemon.vercel.app */}
         <ProjectCard
           src="/SpaceWebsite.png"
           title="Cosmic Portfolio Framework"
           description="A high-performance, responsive web application built with React and Tailwind CSS. Featuring custom GLSL shaders for celestial backgrounds and a focus on secure front-end architecture."
-          link="https://space-portfolio-lemon.vercel.app"
         />
+        {/* link disabled: https://github.com/VaRuN908 */}
         <ProjectCard
           src="/cards-project3.png"
           title="NavitechSecure: Enterprise Auth"
           description="A robust authentication service built for enterprise environments, featuring multi-factor authentication, role-based access control, and secure session management."
-          link="https://github.com/VaRuN908"
+        />
+        {/* link disabled: https://github.com/VaRuN908 */}
+        <ProjectCard
+          src="/vibe-react.png"
+          title="VibeLinkr: Find Your Vibe"
+          description="The best way to connect founders, creators, and professionals through mindset, intent, and goals. Built to turn networking into real alignment and meaningful momentum."
         />
 
       </div>
