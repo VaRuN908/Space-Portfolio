@@ -7,7 +7,7 @@ const Projects = () => {
       <h1 className='text-[28px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10 md:py-20'>
         ----:My Projects:----
       </h1>
-      <div className='h-full w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 px-6 md:px-10'>
+      <div className='h-full w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 px-6 md:px-10'>
         {/* link disabled: https://github.com/VaRuN908 */}
         <ProjectCard
           src="/cards-project1.png"
@@ -31,6 +31,26 @@ const Projects = () => {
           src="/vibe-react.png"
           title="VibeLinkr: Find Your Vibe"
           description="The best way to connect founders, creators, and professionals through mindset, intent, and goals. Built to turn networking into real alignment and meaningful momentum."
+        />
+        <ProjectCard
+          src="/background2.png"
+          title="Indiano Cafe: Celebrate Your Break"
+          description="A responsive cafe website experience designed around rich visual storytelling, clear navigation, and strong call-to-actions for better customer engagement and menu discovery."
+        />
+        <ProjectCard
+          src="/smart-city-operations-hub.png"
+          title="Smart City Operations Hub"
+          description="An IoT command dashboard for mobility intelligence, real-time throughput tracking, incident monitoring, and city-service health insights through live operational analytics."
+        />
+        <ProjectCard
+          src="/name-entity-recognition.png"
+          title="Name Entity Recognition"
+          description="An NLP-powered entity extraction interface that lets users upload PDF, DOCX, CSV, or text inputs and instantly analyze, classify, and highlight named entities for faster document intelligence."
+        />
+        <ProjectCard
+          src="/suraksha-smart-surveillance.png"
+          title="Suraksha Deskboard: Smart Surveillance"
+          description="A smart surveillance control platform built to help reduce crime through centralized camera management. It supports RTSP camera onboarding, indoor/outdoor camera tagging, request tracking, and real-time monitoring workflows for faster incident response."
         />
 
       </div>
