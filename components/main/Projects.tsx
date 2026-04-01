@@ -47,11 +47,6 @@ const Projects = () => {
           title="Name Entity Recognition"
           description="An NLP-powered entity extraction interface that lets users upload PDF, DOCX, CSV, or text inputs and instantly analyze, classify, and highlight named entities for faster document intelligence."
         />
-        <ProjectCard
-          src="/suraksha-smart-surveillance.png"
-          title="Suraksha Deskboard: Smart Surveillance"
-          description="A smart surveillance control platform built to help reduce crime through centralized camera management. It supports RTSP camera onboarding, indoor/outdoor camera tagging, request tracking, and real-time monitoring workflows for faster incident response."
-        />
 
       </div>
 

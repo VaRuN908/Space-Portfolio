@@ -28,6 +28,13 @@ const cyberProjects = [
             'A high-interaction honeypot system developed in Go, designed to trap and analyze attacker behavior in real-time. Features include virtualized terminal sessions (PTY), keystroke logging, and AI-driven behavioral profiling to transform raw exploit data into actionable threat intelligence.',
         // link: 'https://github.com/VaRuN908',
     },
+    {
+        src: '/suraksha-smart-surveillance.png',
+        title: 'Suraksha Deskboard: Smart Surveillance',
+        description:
+            'A smart surveillance control platform built to help reduce crime through centralized camera management. It supports RTSP camera onboarding, indoor/outdoor camera tagging, request tracking, and real-time monitoring workflows for faster incident response.',
+        // link: 'https://github.com/VaRuN908',
+    },
 ]
 
 const Encryption = () => {
