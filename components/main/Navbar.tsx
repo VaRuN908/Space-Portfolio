@@ -62,7 +62,7 @@ const Navbar = () => {
             {/* Mobile menu overlay */}
             <div className={`lg:hidden fixed top-[65px] left-0 w-full bg-[#030014]/95 backdrop-blur-md border-t border-[#7042f861] transition-all duration-300 ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
                 <div className='flex flex-col items-center gap-6 py-8 text-gray-200'>
-                    <a href="#about-me" className='text-lg' onClick={() => setIsOpen(false)}>About me</a>
+                    
                     <a href="#skills" className='text-lg' onClick={() => setIsOpen(false)}>Skills</a>
                     <a href="#projects" className='text-lg' onClick={() => setIsOpen(false)}>Projects</a>
                 </div>

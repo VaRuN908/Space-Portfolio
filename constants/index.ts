@@ -36,15 +36,15 @@ export const Skill_data = [
       // certificate: "/React-certificate.png"
     },
     {
-      skill_name: "Redux",
-      Image: "/redux.png",
+      skill_name: "c-language",
+      Image: "/c-lang.png",
       width: 80,
       height: 80,
       // certificate: "/Redux-certificate.png"
     },
     {
-      skill_name: "React Query",
-      Image: "/reactquery.png",
+      skill_name: "sqlite",
+      Image: "/sqlite.jpg",
       width: 80,
       height: 80,
       // certificate: "/React Query-certificate.png"
@@ -57,8 +57,8 @@ export const Skill_data = [
       // certificate: "/Type Script-certificate.png"
     },
     {
-      skill_name: "Next js 13",
-      Image: "/next.png",
+      skill_name: "arduino",
+      Image: "/arduino.jpg",
       width: 80,
       height: 80,
       // certificate: "/Next js 13-certificate.png"
@@ -69,13 +69,6 @@ export const Skill_data = [
       width: 80,
       height: 80,
       // certificate: "/Framer Motion-certificate.png"
-    },
-    {
-      skill_name: "Stripe Payment",
-      Image: "/stripe.svg",
-      width: 80,
-      height: 80,
-      // certificate: "/Stripe Payment-certificate.png"
     },
     {
       skill_name: "Node js",
@@ -121,43 +114,43 @@ export const Skill_data = [
   
   export const Frontend_skill = [
     {
-      skill_name: "Html 5",
-      Image: "/html.png",
+      skill_name: "netwoking",
+      Image: "/networking.png",
       width: 80,
       height: 80,
       // certificate: "/Html 5-certificate.png"
     },
     {
-      skill_name: "Css",
-      Image: "/css.png",
+      skill_name: "NMAP",
+      Image: "/nmap.png",
       width: 80,
       height: 80,
       // certificate: "/Css-certificate.png"
     },
     {
-      skill_name: "Java Script",
-      Image: "/js.png",
+      skill_name: "PYTORCH",
+      Image: "/pytorch.jpg",
       width: 65,
       height: 65,
       // certificate: "/Java Script-certificate.png"
     },
     {
-      skill_name: "Tailwind Css",
-      Image: "/tailwind.svg",
+      skill_name: "VIBE-CODING",
+      Image: "/VIBECODING.jpg",
       width: 80,
       height: 80,
       // certificate: "/Tailwind Css-certificate.png"
     },
     {
-      skill_name: "Material UI",
-      Image: "/mui.png",
+      skill_name: "ARCH-LINUX",
+      Image: "/ARCH-LINUX.png",
       width: 80,
       height: 80,
       // certificate: "/Material UI-certificate.png"
     },
     {
-      skill_name: "React",
-      Image: "/react.png",
+      skill_name: "IOT",
+      Image: "/iot.png",
       width: 80,
       height: 80,
       // certificate: "/React-certificate.png"
@@ -177,8 +170,8 @@ export const Skill_data = [
       // certificate: "/React Query-certificate.png"
     },
     {
-      skill_name: "Type Script",
-      Image: "/ts.svg",
+      skill_name: "GITHIB",
+      Image: "/github.png",
       width: 80,
       height: 80,
       // certificate: "/Type Script-certificate.png"
@@ -208,8 +201,8 @@ export const Skill_data = [
       // certificate: "/Express js-certificate.png"
     },
     {
-      skill_name: "Python",
-      Image: "/python.png",
+      skill_name: "computerhardware",
+      Image: "/ch.png",
       width: 80,
       height: 80,
       // certificate: "/python-certificate.png"
@@ -230,7 +223,7 @@ export const Skill_data = [
     },
     {
       skill_name: "My SQL",
-      Image: "/mysql.png",
+      Image: "/MySql.png",
       width: 70,
       height: 70,
       // certificate: "/My SQL-certificate.png"
@@ -243,8 +236,8 @@ export const Skill_data = [
       // certificate: "/Prisma-certificate.png"
     },
     {
-      skill_name: "Graphql",
-      Image: "/graphql.png",
+      skill_name: "KALI-LINUX",
+      Image: "/KALI.jpg",
       width: 80,
       height: 80,
       // certificate: "/Graphql-certificate.png"
@@ -260,8 +253,8 @@ export const Skill_data = [
       // certificate: "/React Native-certificate.png"
     },
     {
-      skill_name: "Tauri",
-      Image: "/tauri.svg",
+      skill_name: "android",
+      Image: "/android.png",
       width: 70,
       height: 70,
       // certificate: "/Tauri-certificate.png"
