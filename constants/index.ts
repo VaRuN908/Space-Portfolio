@@ -122,14 +122,14 @@ export const Skill_data = [
     },
     {
       skill_name: "NMAP",
-      Image: "/nmap.png",
+      Image: "/NMAP.png",
       width: 80,
       height: 80,
       // certificate: "/Css-certificate.png"
     },
     {
       skill_name: "PYTORCH",
-      Image: "/pytorch.jpg",
+      Image: "/PYTORCH.jpg",
       width: 65,
       height: 65,
       // certificate: "/Java Script-certificate.png"
@@ -223,7 +223,7 @@ export const Skill_data = [
     },
     {
       skill_name: "My SQL",
-      Image: "/MySql.png",
+      Image: "/mysql.png",
       width: 70,
       height: 70,
       // certificate: "/My SQL-certificate.png"
