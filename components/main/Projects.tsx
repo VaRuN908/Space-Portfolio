@@ -48,6 +48,21 @@ const Projects = () => {
           description="An NLP-powered entity extraction interface that lets users upload PDF, DOCX, CSV, or text inputs and instantly analyze, classify, and highlight named entities for faster document intelligence."
         />
 
+        <ProjectCard
+          src="/volunteer-web-app.png"
+          title="Volunteer Web App"
+          description="A secure and user-friendly volunteer management dashboard portal featuring streamlined account creation and seamless login access for community contributors."
+        />
+        <ProjectCard
+          src="/ai-study-hub.png"
+          title="Study Hub: Study Smart, Score High"
+          description="An AI-powered study platform to generate custom tests, solve them online, and get instant AI explanations from any topic or uploaded chapter PDF."
+        />
+        <ProjectCard
+          src="/ai-laundry-system.png"
+          title="University Laundry Management System"
+          description="An intelligent laundry management system for universities featuring real-time cycle tracking, dual student and faculty access portals, and live operational reporting."
+        />
       </div>
 
     </div>

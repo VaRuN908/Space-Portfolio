@@ -96,7 +96,7 @@ export const Skill_data = [
     {
       name: "linkedin",
       src: "/linkedin.png",
-      link: "https://www.linkedin.com/in/varun-bharadwaj-646805291",
+      link: "https://linkedin.com/in/thevarun019",
     },
     {
       name: "Github",

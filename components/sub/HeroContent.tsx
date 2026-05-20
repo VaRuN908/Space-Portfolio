@@ -38,7 +38,7 @@ const HeroContent = () => {
                 </motion.p>
                 <motion.a
                     variants={slideInFromLeft(0.2)}
-                    href='https://www.linkedin.com/in/varun-bhardwaj-646805291'
+                    href='https://linkedin.com/in/thevarun019'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='py-2 px-6 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'

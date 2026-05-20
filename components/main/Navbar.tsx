@@ -32,7 +32,7 @@ const Navbar = () => {
                 {/* Desktop nav links (Hidden on mobile) */}
                 <div className='hidden lg:flex w-full max-w-[500px] h-full flex-row items-center justify-between mx-auto'>
                     <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200'>
-                        <a href="#about-me" className='cursor-pointer hover:text-purple-400 transition-colors'>About</a>
+                        <a href="https://linkedin.com/in/thevarun019" target="_blank" rel="noopener noreferrer" className='cursor-pointer hover:text-purple-400 transition-colors'>About</a>
                         <a href="#skills" className='cursor-pointer hover:text-purple-400 transition-colors'>Skills</a>
                         <a href="#projects" className='cursor-pointer hover:text-purple-400 transition-colors'>Projects</a>
                     </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
             {/* Mobile menu overlay */}
             <div className={`lg:hidden fixed top-[65px] left-0 w-full bg-[#030014]/95 backdrop-blur-md border-t border-[#7042f861] transition-all duration-300 ${isOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
                 <div className='flex flex-col items-center gap-6 py-8 text-gray-200'>
-                    
+                    <a href="https://linkedin.com/in/thevarun019" target="_blank" rel="noopener noreferrer" className='text-lg' onClick={() => setIsOpen(false)}>About</a>
                     <a href="#skills" className='text-lg' onClick={() => setIsOpen(false)}>Skills</a>
                     <a href="#projects" className='text-lg' onClick={() => setIsOpen(false)}>Projects</a>
                 </div>

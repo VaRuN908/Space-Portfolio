@@ -41,7 +41,7 @@ const Footer = () => {
                             <RxTwitterLogo />
                             <span className="text-[15px] ml-[6px]">Twitter</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/varun-bharadwaj-646805291" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
+                        <a href="https://linkedin.com/in/thevarun019" target="_blank" rel="noopener noreferrer" className="flex flex-row items-center my-[15px] cursor-pointer hover:text-purple-400 transition-colors">
                             <RxLinkedinLogo />
                             <span className="text-[15px] ml-[6px]">Linkedin</span>
                         </a>
